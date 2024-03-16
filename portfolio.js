@@ -46,7 +46,15 @@ const sendEmail = (e) =>{
     e.preventDefault()
 
     // Assuming 'email' is the id of the email input field
-    const userEmail = document.getElementById('charanlingolu@gmail.com').value; // Assuming 'email' is the id of the email input field
+    const userEmail = document.getElementById('email').value; 
+
+     // Assuming 'name' is the id of the name input field
+     const userName = document.getElementById('name').value;
+
+     // Assuming 'message' is the id of the message input field
+     const userMessage = document.getElementById('message').value;
+
+     const recipientEmail = document.getElementById('charanlingolu@gmail.com').value;
         
      // serviceID - templateID - #form - publicKey
      emailjs.sendForm('service_nv08s1l','template_v2q5568','#contact-form','uRTeRqRBBEyYExU4q')
