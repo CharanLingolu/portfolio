@@ -42,8 +42,11 @@ window.addEventListener('scroll', shadowHeader)
 const contactForm = document.getElementById('contact-form'),
       contactMessage = document.getElementById('contact-message')
 
-const charanlingolu@gmail.com = (e) =>{
+const sendEmail = (e) =>{
     e.preventDefault()
+
+    // Assuming 'email' is the id of the email input field
+    const userEmail = document.getElementById('charanlingolu@gmail.com').value; // Assuming 'email' is the id of the email input field
         
      // serviceID - templateID - #form - publicKey
      emailjs.sendForm('service_nv08s1l','template_v2q5568','#contact-form','uRTeRqRBBEyYExU4q')
@@ -65,7 +68,7 @@ const charanlingolu@gmail.com = (e) =>{
      })
 }
 
-contactForm.addEventListener('submit', charanlingolu@gmail.com)
+contactForm.addEventListener('submit', sendEmail)
 
 /*=============== SHOW SCROLL UP ===============*/ 
 const scrollUp = () =>{
